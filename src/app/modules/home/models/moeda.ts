@@ -1,5 +1,5 @@
 export interface Moeda {
-    dollar: string,
-    peso: string,
-    euro: string
+    dollar: number,
+    peso: number,
+    euro: number
 }
