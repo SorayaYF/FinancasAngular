@@ -12,24 +12,24 @@ import { map } from 'rxjs/operators';
 export class FormComponent {
   constructor(private http: HttpClient) {}
 
-  public moeda!: Moeda;
-  public real: string = '';
+  public conversoes!: Moeda;
+  public real!: number;
 
   getData(): Observable<any> {
     let url = 'https://api.hgbrasil.com/finance?format=json-cors&key=c66848a7';
     return this.http.get(url).pipe(
       map((response: any) => {
-        return response;
+        return response.results.currencies;
       })
     );
   }
 
-  public buscarMoeda() {
+  public converte() {
     this.getData().subscribe((data) => {
-      this.moeda = {
-        dollar: data['results']['currencies']['USD']['buy'],
-        euro: data['results']['currencies']['EUR']['buy'],
-        peso: data['results']['currencies']['ARS']['buy'],
+      this.conversoes = {
+        dollar: data['USD']['buy'],
+        euro: data['EUR']['buy'],
+        peso: data['ARS']['buy'],
       };
     });
   }
