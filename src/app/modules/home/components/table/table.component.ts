@@ -7,5 +7,5 @@ import { Moeda } from '../../models/moeda';
   styleUrls: ['./table.component.scss'],
 })
 export class TableComponent {
-  @Input() moeda!: Moeda;
+  @Input() conversoes!: Moeda;
 }

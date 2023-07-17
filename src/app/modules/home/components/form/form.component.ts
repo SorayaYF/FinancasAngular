@@ -26,10 +26,13 @@ export class FormComponent {
 
   public converte() {
     this.getData().subscribe((data) => {
+      const realDolar = (this.real / data.USD.buy).toFixed(2);
+      const realEuro = (this.real / data.EUR.buy).toFixed(2);
+      const realPeso = (this.real / data.ARS.buy).toFixed(2);
       this.conversoes = {
-        dollar: data['USD']['buy'],
-        euro: data['EUR']['buy'],
-        peso: data['ARS']['buy'],
+        dollar: Number(realDolar),
+        euro: Number(realEuro),
+        peso: Number(realPeso),
       };
     });
   }
