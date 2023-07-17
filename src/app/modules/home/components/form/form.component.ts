@@ -7,7 +7,7 @@ import { map } from 'rxjs/operators';
 @Component({
   selector: 'app-form',
   templateUrl: './form.component.html',
-  styleUrls: ['./form.component.scss']
+  styleUrls: ['./form.component.scss'],
 })
 export class FormComponent {
   constructor(private http: HttpClient) {}
@@ -36,5 +36,4 @@ export class FormComponent {
       };
     });
   }
-
 }

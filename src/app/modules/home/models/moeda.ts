@@ -1,5 +1,5 @@
 export interface Moeda {
-    dollar: number,
-    peso: number,
-    euro: number
+  dollar: number;
+  peso: number;
+  euro: number;
 }
