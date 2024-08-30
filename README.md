@@ -1,27 +1,55 @@
-# Financas
+# 📊 FinançasAngular
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.1.3.
+![Angular](https://img.shields.io/badge/Angular-DD0031?style=for-the-badge&logo=angular&logoColor=white)
+![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white)
+![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
+![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
 
-## Development server
+**FinançasAngular** é uma aplicação desenvolvida com Angular que consulta uma API para exibir informações financeiras. Este projeto é a versão Angular do projeto "Finanças", proporcionando uma interface web para visualizar dados financeiros relevantes.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+---
 
-## Code scaffolding
+## 🎯 Objetivo
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+Desenvolver um sistema em Angular que consulta uma API e retorna as seguintes telas:
 
-## Build
+1. **Principais Moedas**: Exibição das principais moedas com suas taxas de câmbio.
+2. **Ações**: Informações sobre as ações mais relevantes.
+3. **Bitcoin**: Dados atualizados sobre o Bitcoin.
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+---
 
-## Running unit tests
+## 🚀 Como Executar
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+Para executar a aplicação **FinançasAngular** em sua máquina, siga os passos abaixo:
 
-## Running end-to-end tests
+1. **Clone o repositório:**
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+    ```bash
+    git clone https://github.com/SeuUsuario/FinancasAngular.git
+    cd FinancasAngular
+    ```
 
-## Further help
+2. **Instale as dependências:**
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+    ```bash
+    npm install
+    ```
+
+3. **Inicie o servidor de desenvolvimento:**
+
+    ```bash
+    ng serve
+    ```
+
+4. **Abra a aplicação em um navegador:**
+
+    Navegue até `http://localhost:4200` para acessar a aplicação.
+
+---
+
+## 🧩 Funcionalidades
+
+- **Tela de Principais Moedas**: Mostra as principais moedas e suas taxas de câmbio.
+- **Tela de Ações**: Exibe informações sobre ações relevantes.
+- **Tela de Bitcoin**: Apresenta dados atualizados sobre o Bitcoin.
